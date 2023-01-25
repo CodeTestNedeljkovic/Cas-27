@@ -9,6 +9,7 @@
     position: absolute;
     animation: animacija 10s, animacija2 10s;
 }
+/* Novi komentar */
 
 @keyframes animacija {
     0% {
