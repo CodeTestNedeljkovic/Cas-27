@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kvadrat {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: animacija 10s, animacija2 10s;
+}
+/* Napravi animaciju koja pomera kvadrat od gornjeg levog ćoška,
+        do donjeg desnog, do donjeg levog, do gornjeg desnog, do gornjeg levog.
+        Između svakog ćoška se okrene za 90 stepeni i promeni boja.
+        Kad odradi ceo put, animacija se završi i kvadrat ostaje tu.
+        Početna i krajnja boja treba da budu različite. */
+
+@keyframes animacija {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: white;
+        transform: rotate(0);
+    }
+    25% {
+        top: calc(100% - 150px);
+        left: calc(100% - 150px);
+        transform: rotate(90deg);
+        background-color: #19A8BA;
+    }
+    50% {
+        top: calc(100% - 150px);
+        left: 0;
+        transform: rotate(180deg);
+        background-color: #7B19BA;
+    }
+    75% {
+        top: 0;
+        left: calc(100% - 150px);
+        transform: rotate(270deg);
+        background-color: #BA2B19;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+        background-color: #57BA19;
+    }
+}
+@keyframes animacija2 {
+    0% {
+        border-radius: 0;
+    }
+    25% {
+        border-radius: 5%;
+    }
+    50% {
+        border-radius: 10%;
+    }
+    75% {
+        border-radius: 15%;
+    }
+    100% {
+        border-radius: 20%;
+    }
+}
