@@ -9,11 +9,6 @@
     position: absolute;
     animation: animacija 10s, animacija2 10s;
 }
-/* Napravi animaciju koja pomera kvadrat od gornjeg levog ćoška,
-        do donjeg desnog, do donjeg levog, do gornjeg desnog, do gornjeg levog.
-        Između svakog ćoška se okrene za 90 stepeni i promeni boja.
-        Kad odradi ceo put, animacija se završi i kvadrat ostaje tu.
-        Početna i krajnja boja treba da budu različite. */
 
 @keyframes animacija {
     0% {
